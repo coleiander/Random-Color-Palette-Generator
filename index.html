@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Color Palette Generator</title>
+        <link rel="icon" href="img/color-picker.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Tiny5&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>☆Random Color Generator!☆</h1>
+            <p>For when you want some spontaneity in your artwork.</p>
+        </header>
+        <main>
+            <div class="container">
+                <div class="container-header">
+                <h3>Palette</h3>
+                </div>
+                <div class="container-body">
+                    <div class="drop-down">
+                        <label for="columns">How many colors do you want?</label>
+                        <select id="columns" onload="hideColumns()" onchange="changeColumns()">
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <div class="palette-container">
+                        <div class="palette" >
+                            <div class="color" id="one">
+                                <p class="hex">#10000</p>
+                            </div>
+                            <div class="color" id="two">
+                                <p class="hex">#10000</p>
+                            </div>
+                            <div class="color" id="three">
+                                <p class="hex">#10000</p>
+                            </div>
+                            <div class="color" id="four">
+                                <p class="hex">#10000</p>
+                            </div>
+                            <div class="color" id="five">
+                                <p class="hex">#10000</p>
+                            </div>
+                            <div class="color" id="six">
+                                <p class="hex">#10000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="bttn" >Randomize!</button>
+                    </div>
+                </div>
+                <script src="script.js"></script>
+        </main>
+    </body>
+</html>
